@@ -8,10 +8,10 @@
         <version>3.4.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.espe</groupId>
+    <groupId>com</groupId>
     <artifactId>citas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cursos</name>
+    <name>citas</name>
     <description>Demo project for Spring Boot</description>
     <url/>
     <licenses>
@@ -78,7 +78,7 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
             <version>4.2.0</version>
         </dependency>
-        
+
     </dependencies>
 
     <build>
