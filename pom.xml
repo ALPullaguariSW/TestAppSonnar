@@ -93,7 +93,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.espe.cursos.CursosApplication</mainClass> <!-- Clase principal correcta -->
+                    <mainClass>com.citas.CitasApplication</mainClass> <!-- Clase principal correcta -->
                 </configuration>
             </plugin>
 
