@@ -17,7 +17,7 @@ jobs:
         ports:
           - 3306:3306
         env:
-          MYSQL_DATABASE: sisdb2025
+          MYSQL_DATABASE: citasMed2025
           MYSQL_ROOT_PASSWORD: 12345
         options: >-
           --health-cmd="mysqladmin ping -h localhost -u root --password=12345 || exit 1"
