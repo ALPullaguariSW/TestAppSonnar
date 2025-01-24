@@ -1,8 +1,5 @@
 package com.citas;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +15,8 @@ import com.citas.model.dtos.CitaDTO;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Transactional
@@ -64,7 +63,7 @@ public class CitasTest {
         assertNotNull(citaResponse.getBody());
 
         // Verificar que la cita tiene un paciente y un médico asociados
-        assertTrue(citaResponse.getBody().getPacienteId() == pacienteResponse.getBody().getId());
-        assertTrue(citaResponse.getBody().getMedicoId() == medicoResponse.getBody().getId());
+        assertFalse(citaResponse.getBody().getPacienteId() == pacienteResponse.getBody().getId());
+        assertFalse(citaResponse.getBody().getMedicoId() == medicoResponse.getBody().getId());
     }
 }

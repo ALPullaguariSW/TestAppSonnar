@@ -30,6 +30,7 @@ public class CitaDTO {
     }
 
     // Getters y Setters
+
     public Long getPacienteId() {
         return pacienteId;
     }
